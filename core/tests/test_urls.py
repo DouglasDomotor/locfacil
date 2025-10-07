@@ -6,5 +6,5 @@ class CoreUrlsTestCase(TestCase):
         url = reverse('index')
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, '<h1>Bem vindo à minha primeira página!!!!</h1>')
+        self.assertContains(response, '<h1>Bem vindo à minha primeira página, do Locfacil!!!</h1>')
         
